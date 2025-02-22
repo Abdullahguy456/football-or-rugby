@@ -1,0 +1,15 @@
+sports=[]
+fcount=0
+rcount=0
+while True:
+    option=input("football or rugby:")
+    sports.append(option)
+    if option=="stop":
+        break
+
+for i in range(len(sports)):
+    if sports[i]=="football":
+        fcount=fcount+1
+    elif sports[i]=="rugby":
+        rcount=rcount+1
+print("\nResults:",fcount,"people choosed football &",rcount,"people choosed rugby")
